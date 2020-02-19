@@ -30,5 +30,22 @@ function addZeros(n) {
     return (parseInt(n, 10) < 10 ? '0' : '') + n;
 }
 
+function setBg() {
+    let currentTime = new Date();
+    let currentHours = currentTime.getHours();
+
+    if (currentHours < 11 && currentHours > 7) {
+        document.body.style.background = "url('../img/morning.jpg')";
+    } else if (currentHours < 17 && currentHours > 11) {
+        document.body.style.background = "url('../img/day.jpg')";
+    } else if (currentHours < 20 && currentHours > 17) {
+        document.body.style.background = "url('../img/afternoon.jpg')";
+    } else {
+        document.body.style.background = "url('../img/night.jpg')";
+        document.body.style.color = "white";
+    }
+}
+
 showDate();
 showTime();
+setBg();
