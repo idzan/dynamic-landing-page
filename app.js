@@ -52,6 +52,11 @@ function setBg() {
     }
 }
 
+function greetingsContent() {
+    greeting.innerHTML = `Welcome back Marko.`;
+}
+
 showDate();
 showTime();
 setBg();
+greetingsContent();
