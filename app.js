@@ -35,15 +35,19 @@ function setBg() {
     let currentHours = currentTime.getHours();
 
     if (currentHours < 11 && currentHours > 7) {
-        document.body.style.background = "url('../img/morning.jpg')";
+        document.body.style.backgroundImage = "url('./img/morning.jpg')";
+        document.body.style.backgroundSize = "cover";
         document.body.style.color = "white";
     } else if (currentHours < 17 && currentHours > 11) {
-        document.body.style.background = "url('../img/day.jpg')";
+        document.body.style.backgroundImage = "url('./img/day.jpg')";
+        document.body.style.backgroundSize = "cover";
     } else if (currentHours < 20 && currentHours > 17) {
-        document.body.style.background = "url('../img/afternoon.jpg')";
+        document.body.style.backgroundImage = "url('./img/afternoon.jpg')";
+        document.body.style.backgroundSize = "cover";
         document.body.style.color = "white";
     } else {
-        document.body.style.background = "url('../img/night.jpg')";
+        document.body.style.backgroundImage = "url('./img/night.jpg')";
+        document.body.style.backgroundSize = "cover";
         document.body.style.color = "white";
     }
 }
