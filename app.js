@@ -37,7 +37,7 @@ function setBg() {
     if (currentHours < 11 && currentHours > 7) {
         document.body.style.backgroundImage = "url('./img/morning.jpg')";
         document.body.style.backgroundSize = "cover";
-        document.body.style.color = "white";
+        document.body.style.color = "navy";
     } else if (currentHours < 17 && currentHours > 11) {
         document.body.style.backgroundImage = "url('./img/day.jpg')";
         document.body.style.backgroundSize = "cover";
