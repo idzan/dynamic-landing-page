@@ -17,8 +17,7 @@ function showTime () {
 }
 
 function showDate () {
-    let todayDate = new Date();
-    
+    let todayDate = new Date();  
     let dates = todayDate.getDate();
     let month = todayDate.getMonth()+1;
     let year = todayDate.getFullYear();
