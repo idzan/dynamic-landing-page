@@ -27,6 +27,10 @@ time {
   font-size: 4rem;
 }
 
+#weekday {
+  font-size: 3rem;
+}
+
 h1 {
   margin-bottom: 2.5rem;
 }

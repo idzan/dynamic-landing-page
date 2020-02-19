@@ -5,7 +5,7 @@ const greeting = document.getElementById('greetings');
 
 const today = new Date();
 const todayDate = new Date();
-const weekdays = ["Sun","Mon","Tue","Wen","Thu","Fri","Sat"];
+const weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
 
 function showTime () {
