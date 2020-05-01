@@ -2,6 +2,7 @@ const time = document.getElementById('time');
 const date = document.getElementById('date');
 const weekday = document.getElementById('weekday');
 const greeting = document.getElementById('greetings');
+const name = document.getElementById('name');
 
 const weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
@@ -17,7 +18,7 @@ function showTime () {
 }
 
 function showDate () {
-    let todayDate = new Date();  
+    let todayDate = new Date();
     let dates = todayDate.getDate();
     let month = todayDate.getMonth()+1;
     let year = todayDate.getFullYear();
@@ -53,10 +54,30 @@ function setBg() {
 }
 
 function greetingsContent() {
-    greeting.innerHTML = `Welcome back Marko.`;
+    greeting.innerHTML = `Welcome back`;
 }
+
+// Get Name
+function getName() {
+    if (localStorage.getItem('name') === null) {
+      name.textContent = '[Enter Name]'; // Check storage for name if not set name to [ENTER NAME]
+    } else {
+      name.textContent = localStorage.getItem('name');
+    }
+
+  }
+  // Set Name
+  function setName(e) {
+    if (e.type === 'keypress') {
+      localStorage.setItem('name', e.target.innerText);
+    }
+  }
+
+name.addEventListener('keypress', setName);
+
 
 showDate();
 showTime();
 setBg();
 greetingsContent();
+getName();
