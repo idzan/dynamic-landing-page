@@ -2,6 +2,6 @@
 
 ![](https://lots-of-pineapple-pizza.is-inside.me/HGLjyi8F.gif)
 
-Code updated and improved by [https://github.com/IeuanGol](@leuanGol)
+Code updated and improved by [@leuanGol](https://github.com/IeuanGol)
 
-Original source by [https://github.com/idzan](@idzan)
+Original source by [@idzan](https://github.com/idzan)
